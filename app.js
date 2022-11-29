@@ -7,7 +7,7 @@ import mongoose from "mongoose";
 const DB_CONNECTION_STRING = 'mongodb+srv://hpadilla6201:<Cristiano7!!>@cluster0.26fhyow.mongodb.net/?retryWrites=true&w=majority'
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
  || 'mongodb://localhost:27017/tuiter'
-mongoose.connect(CONNECTION_STRING);
+mongoose.connect(DB_CONNECTION_STRING);
 
 
 const app = express()
